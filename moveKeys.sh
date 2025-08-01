@@ -13,11 +13,11 @@ for address_dir in $(ls "$KEYS_DIR" | sort); do
   dest="$NODO_BASE-$i/data"
 
   if [[ -d "$src" && -d "$dest" ]]; then
-    echo "🟢 Moviendo claves de $address_dir → $dest"
+    echo "Moviendo claves de $address_dir → $dest"
     cp "$src/key" "$dest/"
     cp "$src/key.pub" "$dest/"
   else
-    echo "⚠️  Directorio faltante: $src o $dest"
+    echo "Directorio faltante: $src o $dest"
   fi
 
   i=$((i + 1))

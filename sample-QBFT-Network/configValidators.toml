@@ -1,0 +1,19 @@
+# Every possible CLI should be in this file.
+#
+# Please use a plausible value, besu has to at least be able to parse it.
+# If it is a multi-valued CLI make it a TOML array.
+# If it is a number or boolean make it a number or boolean
+# All other config options are strings, and must be quoted.
+
+# Node Information
+data-path="data"
+genesis-file="../genesis.json"
+logging="INFO"
+# node-private-key-file="/keys/nodekey"
+bootnodes=["enode://2c8235c2e4a36d9279ef56df540ff1e2143210d9bc38a511a69df557d4a5ddf9e2fce2f736246ea6a4086bfc470b6729246f398d3d8e2195162b0070818ea13f@127.0.0.1:30303"]
+
+rpc-http-enabled=true
+rpc-http-api=["ETH","NET","QBFT"]
+host-allowlist=["*"]
+rpc-http-cors-origins=["all"]
+p2p-host="0.0.0.0"

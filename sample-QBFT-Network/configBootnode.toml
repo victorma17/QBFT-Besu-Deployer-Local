@@ -12,6 +12,11 @@ logging="INFO"
 # node-private-key-file="/keys/nodekey"
  
 p2p-enabled=true
-rpc-http-api=["ETH","NET","QBFT"]
+rpc-http-api=["ETH","NET","QBFT","ADMIN"]
 host-allowlist=["*"]
 rpc-http-cors-origins=["all"]
+
+
+p2p-port=30303
+rpc-http-port=8545 
+metrics-port=9545

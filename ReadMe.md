@@ -49,7 +49,7 @@ We copy the validator keys that Besu has generated for us to our nodes
 sh ../moveKeys.sh 
 ```
 
-Now we need to **open a new terminal** and start the Bootloader Node ⛏️
+Now we need to **OPEN A NEW TERMINAL** and start the Bootloader Node ⛏️
 ```bash
 cd QBFT-Network/Node-1 && besu --config-file=../configBootnode.toml 
 ```

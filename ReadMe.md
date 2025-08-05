@@ -54,13 +54,13 @@ Now we need to **OPEN A NEW TERMINAL** and start the Bootloader Node ⛏️
 cd QBFT-Network/Node-1 && besu --config-file=../configBootnode.toml 
 ```
 
-### ⚠️  CAPTURE the enode URL from Node-1(Bootnode) and COPY IT in the others node start scripts ⚠️ 
-Search for this format:
+### Get back to the previous terminal and capture the enode URL from Node-1(Bootnode) executing the getEnode.sh script
+This will copy the enode in config validator files:
 ```bash
-enode://7404a175960dbe4dba067f9c4fb21e35bca41583346aa2cce9bd0aa92479925d42b0540506ea0e016eeabcf48e98dbae3c8a03c6dbac57ac83e8229b4586ff36@127.0.0.1:30303
+sh ../getEnode.sh
 ```
 
-After add the enode in config file and later you can run them in **new and differents terminals**
+After add the enode in config file and later you can run them in **NEW AND DIFFERENTS TERMINALS**
 Wait until 2 mins avg to let the nodes sync (or Round's are synced)
 ```bash
 cd QBFT-Network/Node-2 && besu --config-file=../configValidators.toml --p2p-port=30304 --rpc-http-port=8546 --metrics-port=9546
